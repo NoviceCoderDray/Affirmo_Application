@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/pink_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".theme_customization">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:src="@drawable/back_button2"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_margin="20dp"
+        android:contentDescription="Return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/Themes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Themes"
+        android:fontFamily="sans-serif"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/Themes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp">
+
+        <RadioButton
+            android:id="@+id/lovelyPinkOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lovely Pink"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            android:textColor="#ED07AF"/>
+
+        <RadioButton
+            android:id="@+id/friendlyBlueOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friendly Blue"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            android:textColor="#16699D"
+            android:layout_marginTop="100dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Apply the Theme"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#D4B3FF"
+        android:textColor="#000000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

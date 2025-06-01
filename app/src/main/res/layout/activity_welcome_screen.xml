@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink_background"
+    tools:context=".welcome_screen">
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/settings_logo"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Settings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/affirmologo2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/affirmo_logo2"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/affirmationListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Affirmation List"
+        android:textSize="18sp"
+        android:backgroundTint="#B399D4"
+        android:textColor="#000000"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/affirmologo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/affirmSenderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Affirmations"
+        android:textSize="18sp"
+        android:backgroundTint="#B399D4"
+        android:textColor="#000000"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/affirmationListButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/createYourOwnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your own"
+        android:textSize="18sp"
+        android:backgroundTint="#B399D4"
+        android:textColor="#000000"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/affirmSenderButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
